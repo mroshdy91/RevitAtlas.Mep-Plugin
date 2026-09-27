@@ -1,0 +1,3 @@
+# Client connection
+
+Codex uses the packaged HTTP v2 endpoint. Claude Code, ZCode, Cursor, Agent Plugins, Gemini and Qwen use the bundled local PowerShell stdio adapter with `-Interface v2-candidate`. The adapter connects to the same local broker and reads the provisioned Windows user credential. For another local client, use `scripts/atlas-client-config.ps1` to export a connection fragment and merge it through that client's supported configuration flow. Client packaging does not establish independent live qualification in every client; see RELEASE-READINESS.md. Cloud-only hosts cannot reach this Windows localhost connection by installing the plugin alone.

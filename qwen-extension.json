@@ -1,0 +1,21 @@
+{
+  "name": "atlas-mep",
+  "version": "2.0.0-alpha.2",
+  "description": "Scoped Revit 2025/2026 piping and equipment project work with Atlas Core.",
+  "mcpServers": {
+    "atlas_mep": {
+      "command": "powershell.exe",
+      "args": [
+        "-NoLogo",
+        "-NoProfile",
+        "-NonInteractive",
+        "-File",
+        "${extensionPath}/scripts/atlas-mcp.ps1",
+        "-Surface",
+        "mep",
+        "-Interface",
+        "v2-candidate"
+      ]
+    }
+  }
+}

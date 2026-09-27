@@ -1,0 +1,17 @@
+{
+  "name": "atlas-mep",
+  "version": "2.0.0-alpha.2",
+  "description": "Scoped Revit 2025/2026 piping and equipment project work with Atlas Core.",
+  "author": {
+    "name": "ROSHDY"
+  },
+  "homepage": "https://github.com/mroshdy91/RevitAtlas.Mep-Plugin",
+  "repository": "https://github.com/mroshdy91/RevitAtlas.Mep-Plugin",
+  "license": "LicenseRef-Atlas-Free-Use",
+  "keywords": [
+    "revit",
+    "bim",
+    "mep"
+  ],
+  "mcpServers": "./.mcp.json"
+}

@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "atlas_mep": {
+      "type": "stdio",
+      "command": "powershell.exe",
+      "args": [
+        "-NoLogo",
+        "-NoProfile",
+        "-NonInteractive",
+        "-File",
+        "${CLAUDE_PLUGIN_ROOT}/scripts/atlas-mcp.ps1",
+        "-Surface",
+        "mep",
+        "-Interface",
+        "v2-candidate"
+      ]
+    }
+  }
+}
