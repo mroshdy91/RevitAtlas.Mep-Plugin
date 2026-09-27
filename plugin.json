@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "atlas-mep",
-  "version": "2.0.0-alpha.2",
-  "description": "Scoped Revit 2025/2026 piping and equipment project work with Atlas Core.",
+  "version": "2.0.0-alpha.3",
+  "description": "Scoped Revit 2025/2026 native MEP project work with Atlas Core.",
   "author": {
     "name": "ROSHDY"
   },

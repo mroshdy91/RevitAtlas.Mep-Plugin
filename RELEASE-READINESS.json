@@ -1,6 +1,6 @@
 {
   "status": "scoped_release_qualified",
-  "runtime_version": "2.0.0-alpha.2",
+  "runtime_version": "2.0.0-alpha.3",
   "qualified_native_revit_versions": [
     "2025",
     "2026"
@@ -8,84 +8,112 @@
   "gates": {
     "installation_lifecycle": {
       "status": "passed",
-      "decision": "Accept actual clean install, exact reinstall, alpha.1 upgrade, rollback and uninstall in an isolated profile using final compiled package.",
+      "decision": "Accept isolated clean install, idempotent reinstall, upgrade from the actual published alpha.2 package, exact rollback and uninstall with identity preservation.",
       "limitations": [
-        "Scoped alpha: supplied pipe-only mechanical equipment or pipe accessories, rigid pipes, bounded equipment movement and physical joins in an owned standalone project. Exactly 13 admitted MEP actions; each delivered project still needs engineering and visual verification.",
-        "Ductwork, electrical, containment, calculations, arbitrary routing, shared setup changes and unlisted MEP mutations remain outside this release.",
-        "Existing four-plugin qualification is retained by source review for unchanged handlers and fresh installed Family checks. This is not completion of broad migration, performance or the Grand Refactor.",
-        "Checkpointed plans remain enabled; atomic plans remain excluded. Revit 2026 starter coverage retains the qualified Mark-tag scope.",
-        "Installed Autodesk prerequisites on this PC; Windows user environment storage simulated. No second-PC claim."
+        "Scoped alpha for the existing 49 native MEP actions on owned standalone, non-workshared projects. Each delivered model still needs task-specific engineering and visual verification.",
+        "Qualified native scenarios cover routed pipe/flex/duct/conduit/tray, compatible supplied and neutral MEP content, bounded connected edits, electrical circuits and panels, linked spaces/zones and controlled setup. Category eligibility does not qualify every manufacturer interface or host.",
+        "Circuit path was round-tripped through the native API; arbitrary circuit-path design, 2D wires, fabrication parts/hangers, hydraulic or electrical design certification, unrestricted routing and arbitrary rehosting are not claimed.",
+        "Inline work uses straight rigid runs and two opposed equal-profile ports; replacement preserves the interface; caps are pipe-only; rerouting and connected edits remain bounded by their action contracts.",
+        "Airflow evidence requires the current restoring native response proof. Assigned input, logical membership, physical connectivity and calculated values remain separate.",
+        "Unchanged Family, Sheets and Annotations behavior retains its earlier scoped qualification, supported by frozen source/dependency review. The Grand Refactor and broad production qualification are not complete.",
+        "Checkpointed Family plans and checked scripts retain prior qualification by unchanged handler review; atomic plans and additional MEP plan execution are not admitted.",
+        "Final promoted public-profile checks in each Revit year must pass before publication.",
+        "Installed Autodesk prerequisites on this PC; user token storage simulated in isolated profile. No second-PC claim."
       ],
       "checks": 1
     },
     "installed_client": {
       "status": "passed",
-      "decision": "Accept actual CLI-installed five-plugin v2 discovery and native piping validation plus Family parameter regression on both years. Public-profile smoke remains a pre-publication requirement.",
+      "decision": "Accept actual CLI-installed Core/MEP/Sheets/Annotations clients on both years, 28 checks each, plus recovery and cancellation. Retain unchanged Family interface and implementation qualification from alpha.2; final five-plugin promoted HTTP/stdio checks remain mandatory before publication.",
       "limitations": [
-        "Scoped alpha: supplied pipe-only mechanical equipment or pipe accessories, rigid pipes, bounded equipment movement and physical joins in an owned standalone project. Exactly 13 admitted MEP actions; each delivered project still needs engineering and visual verification.",
-        "Ductwork, electrical, containment, calculations, arbitrary routing, shared setup changes and unlisted MEP mutations remain outside this release.",
-        "Existing four-plugin qualification is retained by source review for unchanged handlers and fresh installed Family checks. This is not completion of broad migration, performance or the Grand Refactor.",
-        "Checkpointed plans remain enabled; atomic plans remain excluded. Revit 2026 starter coverage retains the qualified Mark-tag scope.",
-        "Zero model requests. This does not qualify every supported host application."
+        "Scoped alpha for the existing 49 native MEP actions on owned standalone, non-workshared projects. Each delivered model still needs task-specific engineering and visual verification.",
+        "Qualified native scenarios cover routed pipe/flex/duct/conduit/tray, compatible supplied and neutral MEP content, bounded connected edits, electrical circuits and panels, linked spaces/zones and controlled setup. Category eligibility does not qualify every manufacturer interface or host.",
+        "Circuit path was round-tripped through the native API; arbitrary circuit-path design, 2D wires, fabrication parts/hangers, hydraulic or electrical design certification, unrestricted routing and arbitrary rehosting are not claimed.",
+        "Inline work uses straight rigid runs and two opposed equal-profile ports; replacement preserves the interface; caps are pipe-only; rerouting and connected edits remain bounded by their action contracts.",
+        "Airflow evidence requires the current restoring native response proof. Assigned input, logical membership, physical connectivity and calculated values remain separate.",
+        "Unchanged Family, Sheets and Annotations behavior retains its earlier scoped qualification, supported by frozen source/dependency review. The Grand Refactor and broad production qualification are not complete.",
+        "Checkpointed Family plans and checked scripts retain prior qualification by unchanged handler review; atomic plans and additional MEP plan execution are not admitted.",
+        "Final promoted public-profile checks in each Revit year must pass before publication.",
+        "Zero model requests in client qualification. No universal host-application claim."
       ],
       "checks": 1
     },
     "native_2025": {
       "status": "passed",
-      "decision": "Accept exact Revit 2025 piping-equipment binaries: native load/place, two DN100 pipe joins, bounded movement, schedule response, annotations and save/reopen. Retain prior scoped four-plugin evidence only for reviewed unchanged handlers.",
+      "decision": "Accept exact Revit 2025 native MEP binary across the composed airside, electrical, containment, piping, setup, linked spaces and engineering scenarios with saved reopening. Preserve failed attempts and accept only reviewed corrected continuations. All 49 actions have retained successful receipts within the reviewed scenarios.",
       "limitations": [
-        "Scoped alpha: supplied pipe-only mechanical equipment or pipe accessories, rigid pipes, bounded equipment movement and physical joins in an owned standalone project. Exactly 13 admitted MEP actions; each delivered project still needs engineering and visual verification.",
-        "Ductwork, electrical, containment, calculations, arbitrary routing, shared setup changes and unlisted MEP mutations remain outside this release.",
-        "Existing four-plugin qualification is retained by source review for unchanged handlers and fresh installed Family checks. This is not completion of broad migration, performance or the Grand Refactor.",
-        "Checkpointed plans remain enabled; atomic plans remain excluded. Revit 2026 starter coverage retains the qualified Mark-tag scope."
+        "Scoped alpha for the existing 49 native MEP actions on owned standalone, non-workshared projects. Each delivered model still needs task-specific engineering and visual verification.",
+        "Qualified native scenarios cover routed pipe/flex/duct/conduit/tray, compatible supplied and neutral MEP content, bounded connected edits, electrical circuits and panels, linked spaces/zones and controlled setup. Category eligibility does not qualify every manufacturer interface or host.",
+        "Circuit path was round-tripped through the native API; arbitrary circuit-path design, 2D wires, fabrication parts/hangers, hydraulic or electrical design certification, unrestricted routing and arbitrary rehosting are not claimed.",
+        "Inline work uses straight rigid runs and two opposed equal-profile ports; replacement preserves the interface; caps are pipe-only; rerouting and connected edits remain bounded by their action contracts.",
+        "Airflow evidence requires the current restoring native response proof. Assigned input, logical membership, physical connectivity and calculated values remain separate.",
+        "Unchanged Family, Sheets and Annotations behavior retains its earlier scoped qualification, supported by frozen source/dependency review. The Grand Refactor and broad production qualification are not complete.",
+        "Checkpointed Family plans and checked scripts retain prior qualification by unchanged handler review; atomic plans and additional MEP plan execution are not admitted.",
+        "Final promoted public-profile checks in each Revit year must pass before publication."
       ],
       "checks": 1
     },
     "native_2026": {
       "status": "passed",
-      "decision": "Accept exact Revit 2026 piping-equipment binaries: native load/place, two DN100 pipe joins, bounded movement, schedule response, annotations and save/reopen. Retain prior scoped four-plugin evidence only for reviewed unchanged handlers.",
+      "decision": "Accept exact Revit 2026 native MEP binary across the composed airside, electrical, containment, piping, setup, linked spaces and engineering scenarios with saved reopening. Preserve failed attempts and accept only reviewed corrected continuations. All 49 actions have retained successful receipts within the reviewed scenarios.",
       "limitations": [
-        "Scoped alpha: supplied pipe-only mechanical equipment or pipe accessories, rigid pipes, bounded equipment movement and physical joins in an owned standalone project. Exactly 13 admitted MEP actions; each delivered project still needs engineering and visual verification.",
-        "Ductwork, electrical, containment, calculations, arbitrary routing, shared setup changes and unlisted MEP mutations remain outside this release.",
-        "Existing four-plugin qualification is retained by source review for unchanged handlers and fresh installed Family checks. This is not completion of broad migration, performance or the Grand Refactor.",
-        "Checkpointed plans remain enabled; atomic plans remain excluded. Revit 2026 starter coverage retains the qualified Mark-tag scope."
+        "Scoped alpha for the existing 49 native MEP actions on owned standalone, non-workshared projects. Each delivered model still needs task-specific engineering and visual verification.",
+        "Qualified native scenarios cover routed pipe/flex/duct/conduit/tray, compatible supplied and neutral MEP content, bounded connected edits, electrical circuits and panels, linked spaces/zones and controlled setup. Category eligibility does not qualify every manufacturer interface or host.",
+        "Circuit path was round-tripped through the native API; arbitrary circuit-path design, 2D wires, fabrication parts/hangers, hydraulic or electrical design certification, unrestricted routing and arbitrary rehosting are not claimed.",
+        "Inline work uses straight rigid runs and two opposed equal-profile ports; replacement preserves the interface; caps are pipe-only; rerouting and connected edits remain bounded by their action contracts.",
+        "Airflow evidence requires the current restoring native response proof. Assigned input, logical membership, physical connectivity and calculated values remain separate.",
+        "Unchanged Family, Sheets and Annotations behavior retains its earlier scoped qualification, supported by frozen source/dependency review. The Grand Refactor and broad production qualification are not complete.",
+        "Checkpointed Family plans and checked scripts retain prior qualification by unchanged handler review; atomic plans and additional MEP plan execution are not admitted.",
+        "Final promoted public-profile checks in each Revit year must pass before publication."
       ],
       "checks": 1
     },
     "source_and_dependency_audit": {
       "status": "passed",
-      "decision": "Accept compiled distribution, exact input/binary pins, 25 dependency notice sets and source review of the seven changed compiled files. No implementation source, customer models, credentials or Autodesk binaries included.",
+      "decision": "Accept source delta, frozen output and distribution review, retained unchanged dependency obligations with complete pinned notice texts for 25 packages; no implementation source, debug symbols, customer models, credentials or Autodesk API binaries shipped.",
       "limitations": [
-        "Scoped alpha: supplied pipe-only mechanical equipment or pipe accessories, rigid pipes, bounded equipment movement and physical joins in an owned standalone project. Exactly 13 admitted MEP actions; each delivered project still needs engineering and visual verification.",
-        "Ductwork, electrical, containment, calculations, arbitrary routing, shared setup changes and unlisted MEP mutations remain outside this release.",
-        "Existing four-plugin qualification is retained by source review for unchanged handlers and fresh installed Family checks. This is not completion of broad migration, performance or the Grand Refactor.",
-        "Checkpointed plans remain enabled; atomic plans remain excluded. Revit 2026 starter coverage retains the qualified Mark-tag scope.",
-        "Unsigned compiled binaries remain inspectable; public client files receive separate publication review."
+        "Scoped alpha for the existing 49 native MEP actions on owned standalone, non-workshared projects. Each delivered model still needs task-specific engineering and visual verification.",
+        "Qualified native scenarios cover routed pipe/flex/duct/conduit/tray, compatible supplied and neutral MEP content, bounded connected edits, electrical circuits and panels, linked spaces/zones and controlled setup. Category eligibility does not qualify every manufacturer interface or host.",
+        "Circuit path was round-tripped through the native API; arbitrary circuit-path design, 2D wires, fabrication parts/hangers, hydraulic or electrical design certification, unrestricted routing and arbitrary rehosting are not claimed.",
+        "Inline work uses straight rigid runs and two opposed equal-profile ports; replacement preserves the interface; caps are pipe-only; rerouting and connected edits remain bounded by their action contracts.",
+        "Airflow evidence requires the current restoring native response proof. Assigned input, logical membership, physical connectivity and calculated values remain separate.",
+        "Unchanged Family, Sheets and Annotations behavior retains its earlier scoped qualification, supported by frozen source/dependency review. The Grand Refactor and broad production qualification are not complete.",
+        "Checkpointed Family plans and checked scripts retain prior qualification by unchanged handler review; atomic plans and additional MEP plan execution are not admitted.",
+        "Final promoted public-profile checks in each Revit year must pass before publication.",
+        "Public client file inventory receives a separate pre-publication review."
       ],
       "checks": 1
     },
     "visual_acceptance": {
       "status": "passed",
-      "decision": "Accept reviewed native captures in both versions: visible equipment, both pipes, legible native DN100 tag and note, no clipping; existing Plumbing Plan appearance and explicit view range.",
+      "decision": "Accept actual parent-reviewed native airside plan annotations and electrical panel schedules in both versions: readable geometry, native dimensions/tags or schedule cells, within frame. This is fixture drawing acceptance.",
       "limitations": [
-        "Scoped alpha: supplied pipe-only mechanical equipment or pipe accessories, rigid pipes, bounded equipment movement and physical joins in an owned standalone project. Exactly 13 admitted MEP actions; each delivered project still needs engineering and visual verification.",
-        "Ductwork, electrical, containment, calculations, arbitrary routing, shared setup changes and unlisted MEP mutations remain outside this release.",
-        "Existing four-plugin qualification is retained by source review for unchanged handlers and fresh installed Family checks. This is not completion of broad migration, performance or the Grand Refactor.",
-        "Checkpointed plans remain enabled; atomic plans remain excluded. Revit 2026 starter coverage retains the qualified Mark-tag scope.",
-        "Visual judgment is confined to this piping fixture."
+        "Scoped alpha for the existing 49 native MEP actions on owned standalone, non-workshared projects. Each delivered model still needs task-specific engineering and visual verification.",
+        "Qualified native scenarios cover routed pipe/flex/duct/conduit/tray, compatible supplied and neutral MEP content, bounded connected edits, electrical circuits and panels, linked spaces/zones and controlled setup. Category eligibility does not qualify every manufacturer interface or host.",
+        "Circuit path was round-tripped through the native API; arbitrary circuit-path design, 2D wires, fabrication parts/hangers, hydraulic or electrical design certification, unrestricted routing and arbitrary rehosting are not claimed.",
+        "Inline work uses straight rigid runs and two opposed equal-profile ports; replacement preserves the interface; caps are pipe-only; rerouting and connected edits remain bounded by their action contracts.",
+        "Airflow evidence requires the current restoring native response proof. Assigned input, logical membership, physical connectivity and calculated values remain separate.",
+        "Unchanged Family, Sheets and Annotations behavior retains its earlier scoped qualification, supported by frozen source/dependency review. The Grand Refactor and broad production qualification are not complete.",
+        "Checkpointed Family plans and checked scripts retain prior qualification by unchanged handler review; atomic plans and additional MEP plan execution are not admitted.",
+        "Final promoted public-profile checks in each Revit year must pass before publication.",
+        "Not universal visual qualification for arbitrary projects."
       ],
       "checks": 1
     }
   },
   "limitations": [
-    "Checkpointed plans remain enabled; atomic plans remain excluded. Revit 2026 starter coverage retains the qualified Mark-tag scope.",
-    "Ductwork, electrical, containment, calculations, arbitrary routing, shared setup changes and unlisted MEP mutations remain outside this release.",
-    "Existing four-plugin qualification is retained by source review for unchanged handlers and fresh installed Family checks. This is not completion of broad migration, performance or the Grand Refactor.",
-    "Installed Autodesk prerequisites on this PC; Windows user environment storage simulated. No second-PC claim.",
-    "Scoped alpha: supplied pipe-only mechanical equipment or pipe accessories, rigid pipes, bounded equipment movement and physical joins in an owned standalone project. Exactly 13 admitted MEP actions; each delivered project still needs engineering and visual verification.",
-    "Unsigned compiled binaries remain inspectable; public client files receive separate publication review.",
-    "Visual judgment is confined to this piping fixture.",
-    "Zero model requests. This does not qualify every supported host application."
+    "Airflow evidence requires the current restoring native response proof. Assigned input, logical membership, physical connectivity and calculated values remain separate.",
+    "Checkpointed Family plans and checked scripts retain prior qualification by unchanged handler review; atomic plans and additional MEP plan execution are not admitted.",
+    "Circuit path was round-tripped through the native API; arbitrary circuit-path design, 2D wires, fabrication parts/hangers, hydraulic or electrical design certification, unrestricted routing and arbitrary rehosting are not claimed.",
+    "Final promoted public-profile checks in each Revit year must pass before publication.",
+    "Inline work uses straight rigid runs and two opposed equal-profile ports; replacement preserves the interface; caps are pipe-only; rerouting and connected edits remain bounded by their action contracts.",
+    "Installed Autodesk prerequisites on this PC; user token storage simulated in isolated profile. No second-PC claim.",
+    "Not universal visual qualification for arbitrary projects.",
+    "Public client file inventory receives a separate pre-publication review.",
+    "Qualified native scenarios cover routed pipe/flex/duct/conduit/tray, compatible supplied and neutral MEP content, bounded connected edits, electrical circuits and panels, linked spaces/zones and controlled setup. Category eligibility does not qualify every manufacturer interface or host.",
+    "Scoped alpha for the existing 49 native MEP actions on owned standalone, non-workshared projects. Each delivered model still needs task-specific engineering and visual verification.",
+    "Unchanged Family, Sheets and Annotations behavior retains its earlier scoped qualification, supported by frozen source/dependency review. The Grand Refactor and broad production qualification are not complete.",
+    "Zero model requests in client qualification. No universal host-application claim."
   ],
   "broad_production_ready": false,
   "interface_identity": {
@@ -97,72 +125,127 @@
   },
   "mep_admission": {
     "format_version": 1,
-    "scope_id": "piping_equipment_v1",
+    "scope_id": "mep_native_v1",
     "revit_versions": [
       "2025",
       "2026"
     ],
+    "actions": [
+      "atlas_inspect.mep_catalog",
+      "atlas_inspect.mep_demand",
+      "atlas_inspect.mep_dependencies",
+      "atlas_inspect.mep_network",
+      "atlas_inspect.mep_panel_schedule",
+      "atlas_inspect.mep_plan",
+      "atlas_inspect.mep_preservation",
+      "atlas_mep_connections.branch",
+      "atlas_mep_connections.cap",
+      "atlas_mep_connections.disconnect",
+      "atlas_mep_connections.inline",
+      "atlas_mep_connections.inline_remove",
+      "atlas_mep_connections.join",
+      "atlas_mep_connections.tee",
+      "atlas_mep_electrical.circuit",
+      "atlas_mep_electrical.distribution",
+      "atlas_mep_electrical.loads",
+      "atlas_mep_electrical.panel",
+      "atlas_mep_electrical.panel_schedule",
+      "atlas_mep_electrical.path",
+      "atlas_mep_elements.insulate",
+      "atlas_mep_elements.load",
+      "atlas_mep_elements.move",
+      "atlas_mep_elements.place",
+      "atlas_mep_elements.remove",
+      "atlas_mep_elements.replace",
+      "atlas_mep_elements.rotate",
+      "atlas_mep_routes.build",
+      "atlas_mep_routes.elevation",
+      "atlas_mep_routes.plan",
+      "atlas_mep_routes.remove",
+      "atlas_mep_routes.reroute",
+      "atlas_mep_routes.resize",
+      "atlas_mep_routes.split",
+      "atlas_mep_setup.apply",
+      "atlas_mep_setup.inspect",
+      "atlas_mep_setup.plan",
+      "atlas_mep_setup.verify",
+      "atlas_mep_spaces.create",
+      "atlas_mep_spaces.reconcile_apply",
+      "atlas_mep_spaces.reconcile_plan",
+      "atlas_mep_spaces.update",
+      "atlas_mep_spaces.zone",
+      "atlas_mep_systems.assign",
+      "atlas_mep_systems.change_type",
+      "atlas_mep_systems.create",
+      "atlas_mep_systems.values",
+      "atlas_validate.mep",
+      "atlas_validate.mep_calculation"
+    ],
     "constraints": {
       "route_kinds": [
-        "pipe"
+        "pipe",
+        "flex_pipe",
+        "duct",
+        "flex_duct",
+        "conduit",
+        "tray"
       ],
       "element_categories": [
         "OST_MechanicalEquipment",
-        "OST_PipeAccessory"
+        "OST_DuctTerminal",
+        "OST_DuctAccessory",
+        "OST_PipeAccessory",
+        "OST_PlumbingFixtures",
+        "OST_Sprinklers",
+        "OST_ElectricalEquipment",
+        "OST_ElectricalFixtures",
+        "OST_LightingFixtures",
+        "OST_LightingDevices",
+        "OST_DataDevices",
+        "OST_FireAlarmDevices",
+        "OST_CommunicationDevices"
       ],
       "connection_domains": [
-        "DomainPiping"
+        "DomainPiping",
+        "DomainHvac",
+        "DomainElectrical",
+        "DomainCableTrayConduit"
       ]
     },
-    "actions": [
-      "atlas_mep_routes.plan",
-      "atlas_mep_routes.build",
-      "atlas_mep_elements.load",
-      "atlas_mep_elements.place",
-      "atlas_mep_elements.move",
-      "atlas_mep_connections.join",
-      "atlas_mep_setup.inspect",
-      "atlas_inspect.mep_catalog",
-      "atlas_inspect.mep_network",
-      "atlas_inspect.mep_dependencies",
-      "atlas_inspect.mep_plan",
-      "atlas_inspect.mep_preservation",
-      "atlas_validate.mep"
-    ],
     "gates": {
+      "installed_client": {
+        "status": "passed",
+        "evidence": {
+          "path": "qualification/mep/installed_client.json",
+          "sha256": "b9c50ce05dc27a7c832cbbbb9c7999bb0966abf428fa62edd0e0a420d1eb8269"
+        }
+      },
       "native_2025": {
         "status": "passed",
         "evidence": {
           "path": "qualification/mep/native_2025.json",
-          "sha256": "1e97cb7e5fc1f74e6f5e6fb6da3e07b50ee413f6801c893b35036b722098e757"
+          "sha256": "d80b811ac9446fa458af358ddd211bcec2c7f22a4f727803175643d8e5e72d8b"
         }
       },
       "native_2026": {
         "status": "passed",
         "evidence": {
           "path": "qualification/mep/native_2026.json",
-          "sha256": "c3098b3af1abc23c3ad9403ba59dbd763e8df3e3286d5dcec1b8f12123cdc2ab"
-        }
-      },
-      "installed_client": {
-        "status": "passed",
-        "evidence": {
-          "path": "qualification/mep/installed_client.json",
-          "sha256": "9981cb2b1a12132662f023a96adce7551d6ece340edabe55ea912ada5f446e97"
+          "sha256": "6d4748d4cd881d69df298dc39c8c26b021fceef9164b238b3684a73ed1aa2d36"
         }
       },
       "recovery_performance": {
         "status": "passed",
         "evidence": {
           "path": "qualification/mep/recovery_performance.json",
-          "sha256": "8be51df4acf350d50077db7db060eab44b503165f8a63dbe3e25867b0438473c"
+          "sha256": "f1ed78a2538e26ce1544a5715a3a01f099cdb75f1ef1bb07a8063fa7af084884"
         }
       },
       "visual_acceptance": {
         "status": "passed",
         "evidence": {
           "path": "qualification/mep/visual_acceptance.json",
-          "sha256": "b176528b0a06fb148107cabfda0245a9c70f38cf1b4ceb79af5d9d55256a2f2a"
+          "sha256": "c8dde196dae08c0820b0c54e85ed83ed793b6ee09421f5da34ca0b4b5c6ea2a5"
         }
       }
     }
